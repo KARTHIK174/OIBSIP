@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://media.gettyimages.com/id/1027020436/video/timelapse-of-the-sky.jpg?s=640x640&k=20&c=1WJo-EVoLbGW6pS_NDoLxFkCEQU_GE1SZtgNd56ZU9k=');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .intro{
+            height: 60px;
+            width: auto;
+            background-color: #46447b;
+        }
+        .h1{
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .out{
+            border: 2px solid black;
+            height: 430px;
+            width: 350px;
+            margin-left: 90px;
+            margin-top: 100px;
+        }
+        .title{
+            height: 40px;
+            width: 330px;
+            margin-left: 5px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            background-color: #d69b64;
 
+        }
+        .desc{
+            height: 300px;
+            width: 330px;
+            margin-left: 5px;
+            margin-top: 5px;
+            background-color: #dc9d62;
+        }
+        .box{
+            margin-left: 50%;
+            margin-top: -32%;
+            padding-top: -10px;
+        }
+        #row{
+            font-size: 40px;
+        }
+        .tab1{
+            height: 60px;
+            width: 600px;
+        }
+        #th1{
+            font-size: 30px;
+        }
+        
+        .submit{
+            margin-top: 10px;
+            margin-left: 145px;
+            font-size: 20px;
+            background-color: rgb(23, 99, 23);
+            height: 50px;
+            width: 89px;
+        }
+        #tit,#des{
+            font-size: 30px;
+        }
+        #h{
+            color: rgb(19, 15, 7);
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    <form  id="bod">
+    <div class="intro">
+        <h2 class="h1">TO-DO LIST</h2>
+    </div>
+    <div class="out">
+        <input type="text" class="title" id="tit" placeholder="title"  required><br>
+        <input type="text" class="desc" id="des" placeholder="description" required>
+        <button class="submit" type="submit" onclick="AddData()">Submit</button>
+    </div>
+
+    
+
+    <div class="box">
+        <h2 id="h">Lists</h2>
+        <table class="tab1" border="4" id="show">
+				<tr id="row">
+                    <th id="th1">S.No</th>
+					<th id="th1">Title</th>
+                    <th id="th1">Description</th>
+				</tr>
+		</table>
+    </div>
+</form>
+    <script src="todo.js"></script>
+</body>
+</html>
